@@ -1,10 +1,10 @@
 import React from 'react'
-import './home.scss'
 import HeroBanner from './heroBanner/HeroBanner'
+import './home.scss'
 
 const Home = () => {
   return (
-    <div className="homepage">
+    <div className="homePage">
       <HeroBanner />
     </div>
   )

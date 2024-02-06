@@ -16,7 +16,7 @@ import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   const dispatch = useDispatch();
-  const {url} = useSelector((state) => state.home);
+  const { url } = useSelector((state) => state.home);
   console.log(url);
 
   useEffect(() => {
@@ -25,18 +25,17 @@ function App() {
   }, [])
 
   const fetchApiConfig = () => {
-    fetchDataFromApi('/configuration')
-      .then((response) => {
-        console.log(response);
-        
-        const url = {
-          backdrop: res.images.secure_base_url + "original",
-          poster: res.images.secure_base_url + "original",
-          profile: res.images.secure_base_url + "original",
+    fetchDataFromApi("/configuration").then((response) => {
+      console.log(response);
+      
+      const url = {
+        backdrop: res.images.secure_base_url + "original",
+        poster: res.images.secure_base_url + "original",
+        profile: res.images.secure_base_url + "original",
       };
-        dispatch(getApiConfiguration(response));
-      })
-  }
+        dispatch(getApiConfiguration(url));
+      });
+  };
 
   const genresCall = async () => {
     let promises = [];
@@ -54,7 +53,7 @@ function App() {
     });
 
     dispatch(getGenres(allGenres));
-};
+  };
 
   return (
     <BrowserRouter>
