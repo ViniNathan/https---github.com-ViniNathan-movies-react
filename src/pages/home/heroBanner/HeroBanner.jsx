@@ -10,7 +10,7 @@ const HeroBanner = () => {
   const [background, setBackground] = useState("");
   const [query, setQuery] = useState("");
   const { url } = useSelector((state) => state.home);
-  const { data, loading } = useFetch("/movie/upcoming");
+  const { data, loading } = useFetch("/movie/popular" || "/movie/upcoming");
   const navigate = useNavigate();
 
   useEffect(() => {
