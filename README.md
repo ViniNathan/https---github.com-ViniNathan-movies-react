@@ -1,8 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is an React app created based on a TheMovieDB API tutorial available on youtube with top notch frontend technologies such as React, Redux & SCSS. In this project I've used core concepts of ReactJS such as jsx, components, props, state, lifecycle of components, conditional rendering, lists, keys & Redux.
