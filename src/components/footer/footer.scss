@@ -1,6 +1,6 @@
 @import "../../mixins.scss";
 
-.footer {
+.footer{
     background-color: var(--black3);
     padding: 50px 0;
     color: white;
@@ -60,6 +60,9 @@
             justify-content: center;
             cursor: pointer;
             transition: all ease 0.3s;
+            a{
+                color: white;
+            }
             &:hover {
                 box-shadow: 0 0 0.625em var(--pink);
                 color: var(--pink);
